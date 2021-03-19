@@ -1,4 +1,5 @@
 
+
 #include<iostream>
 #include<stdio.h>
 #include<bits/stdc++.h>
@@ -17,16 +18,16 @@ int busday()
 		cin>>A[i];
 	}
 	
-	if(n=1)
+	if(n==1)
 	{
-		return 1;
+		return d;
 	}
 	for(i=0;i<n-1;i++)
 	{
 		l=(d/A[0])*A[0];
 		r=(d/A[n-i-1])*A[n-i-1];
 		
-		while(l>=r)
+		while(l>r)
 		{
 			l=l-A[0];
 		}
